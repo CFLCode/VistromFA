@@ -5,13 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vistrom Fashion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body { 
             height: 100%;
             min-height: 100vh;
             margin: 0px;
             padding: 0px;
+            background-color: #ebebeb;
         }
+
+        /* Top border styling start*/
         .topSection {
             font-family: Arial, Helvetica, sans-serif;
             color: white;
@@ -20,6 +24,7 @@
             padding-bottom: -50px;
             margin-bottom: 0px;
         }
+
         .topSectionTextLeft{
             display: flex;
             flex-direction: row;
@@ -27,21 +32,133 @@
             margin-right: auto;
             padding-left: 75px;
         }
+
         .topSectionTextRight {
             display: flex;
             flex-direction: row;
             justify-content: end;
             padding-right: 75px;
         }
+
         h6 {
             font-weight: 100;
             margin-right: 25px;
             margin: 10px;
         }
+
         a {
             text-decoration: none;
             color: snow;
+        } 
+        /* Top border styling end*/
+
+        /* Navigation bar styling starts*/
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #ffffff;
+            color: #fff;
+            padding: 35px 60px;
+            box-shadow: 1px 1px 5px #8e8e8e;
         }
+
+        .navbar-left a,
+        .navbar-right a {
+            color: #000000;
+            text-decoration: none;
+            margin-right: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: smaller;
+            font-weight: 100;
+        }
+
+        .navbar-left {
+            margin-left: 100px;
+        }
+
+        .navbar-right {
+            margin-right: 100px;
+        }
+
+        .navbar-center a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .navbar-center img {
+            max-height: 40px;
+            max-width: 100%;
+        }
+
+        .cart-icon {
+            position: relative;
+            display: inline-block;
+            font-size: 18px;
+            color: #333;
+            cursor: pointer;
+            margin-left: -20px;
+        }
+
+        .cart-count {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background-color: rgb(255, 255, 255);
+            color: #000000;
+            font-size: 10px;
+            padding: 1px 3px;
+            border-radius: 50%;
+            border-style: solid;
+        }
+        /* Navigation bar styling ends*/
+
+        /* cart page styling starts*/
+
+        /* .cart {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #f0f0f0;
+        }
+
+        .cart h2 {
+        margin-bottom: 10px;
+        }
+
+        .cart-items li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        }
+
+        .cart-items img {
+        width: 80px;
+        height: 80px;
+        margin-right: 10px;
+        }
+
+        .item-details input {
+        width: 40px;
+        }
+
+        .cart-total {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+        }
+
+        .cart-total button {
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        } */
     </style>
 </head>
 <body>
@@ -56,5 +173,52 @@
             <h6><a href="#">KUNDTJÄNST</a></h6>
         </div>
     </section>
+<nav class="navbar">
+    <div class="navbar-left">
+        <a href="#">HERR</a>
+        <a href="#">DAM</a>
+        <a href="#">MÄRKEN</a>
+        <a href="#">REA</a>
+    </div>
+    <div class="navbar-center">
+        <a href="#"><img src="/Users/FredrikLundgren/Desktop/Arbetsprov Viström Skövde/arbetsprov-frontend/Material/Hackett.png" alt="Logo"></a>
+    </div>
+    <div class="navbar-right">
+        <a href="#">SÖK</a>
+        <a href="#">LISTA</a>
+        <a href="#">KUNDKORG</a>
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">2</span>
+        </div>
+    </div>
+    <!-- <div class="cart">
+        <h2>Shopping Cart</h2>
+        <ul class="cart-items">
+            <li>
+                <img src="product1.jpg" alt="Product 1">
+                <div class="item-details">
+                    <h3>Product 1</h3>
+                    <p>$19.99</p>
+                    <input type="number" value="1">
+                    <button class="remove-item">Remove</button>
+                </div>
+            </li>
+            <li>
+                <img src="product2.jpg" alt="Product 2">
+                <div class="item-details">
+                    <h3>Product 2</h3>
+                    <p>$24.99</p>
+                    <input type="number" value="1">
+                    <button class="remove-item">Remove</button>
+                </div>
+            </li>
+        </ul>
+        <div class="cart-total">
+            <p>Total: $44.98</p>
+            <button class="checkout">Checkout</button>
+        </div>
+    </div> -->
+</nav>
 </body>
 </html>
