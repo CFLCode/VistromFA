@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid System Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+            width: 100%;
+        }
+
+        img {
+            width: 50%;
+            height: auto;
+        }
+
+        @media (max-width: 800px){
+            img {
+                 width: 25%;
+                 height: auto;
+            }
+        }
+
+        .photo-carousel {
+
+        }
+
+        .article-page {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .stock-status {
+            align-self: flex-end;
+            margin-right: 10px;
+        }
+
+        .new-product {
+            align-self: flex-start;
+            margin-left: 10px;
+        }
+
+        .size-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .size-button {
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+
+        .add-to-cart-button {
+            margin-top: 10px;
+        }
+
+        .product-info {
+            margin-top: 20px;
+        }
+
+        .article-number,
+        .product-description,
+        .additional-info {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="photo-carousel">
+        <a href="#"><img src="/Users/FredrikLundgren/Desktop/Arbetsprov Viström Skövde/arbetsprov-frontend/Material/main.png" alt="Logo"></a>
+            <a href=""><img src="" alt=""></a>
+        </div>
+        <div class="article-page">
+            <div class="stock-status">Stock: In Stock</div>
+            <div class="new-product">New Product</div>
+            <div class="size-buttons">
+                <button class="size-button">Small</button>
+                <button class="size-button">Medium</button>
+                <button class="size-button">Large</button>
+                <button class="add-to-cart-button">Add to Cart</button>
+            </div>
+            <div class="product-info">
+                <div class="article-number">Article Number: 12345</div>
+                <div class="product-description">Product Description: Lorem ipsum dolor sit amet...</div>
+                <div class="additional-info">
+                    <div class="info-row">Additional Info 1: Lorem ipsum dolor sit amet...</div>
+                    <div class="info-row">Additional Info 2: Lorem ipsum dolor sit amet...</div>
+                    <div class="info-row">Additional Info 3: Lorem ipsum dolor sit amet...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rest of the content -->
+
+</body>
+
+</html>
