@@ -3,3 +3,5 @@ Hi!
 This is the file for the questions and answers for the worktest at Viström.
 
 Lets get on to it!
+
+For the best visual experience I moved the Questions And Answers form to a separate Pages file.
